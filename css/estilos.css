@@ -34,19 +34,32 @@ header {
     background-repeat: no-repeat;
 }
 
-.milanesa {
-    background-image: url(../multimedia/mila.jpg);
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
-.cerveza {
-    background-image: url(../multimedia/cerveza.jpg);
+.column {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
 }
 
+@media (max-width: 600px) {
+    .row {
+        flex-direction: column;
+    }
 
-
-.pizza {
-    background-image: url(../multimedia/pizza.jpg);
+    .column {
+        height: 150px;
+    }
 }
+
 
 .imagen img {
     width: auto;
@@ -151,4 +164,19 @@ p {
 
 a {
     text-decoration: none;
+}
+
+.contenedorTotal {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 1fr 1fr 1fr 0.2fr;
+    grid-template-areas:
+        "titulo  menu"
+        "subtitulo subtitulo"
+        "footer footer"
+}
+
+
+.h5 {
+    grid-area: subtitulo
 }
