@@ -6,11 +6,17 @@ body {
     margin: 0px;
 }
 
-.h3 {
+.h1 {
     color: white;
     padding: 10px;
     text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
 
+.h2 {
+    color: rgb(99, 117, 27);
+    padding: 10px;
+    text-align: center;
 }
 
 header {
@@ -69,6 +75,7 @@ header {
 .logo {
     display: flex;
     align-items: flex-end;
+    color: white;
 
 
 }
@@ -87,7 +94,7 @@ p {
 
 .menu {
     list-style-type: none;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 15px;
     justify-content: space-between 10px;
     color: white;
@@ -112,7 +119,7 @@ p {
 
 
 .h5 {
-    color: white;
+    color: rgb(88, 85, 24);
     display: flex;
     font-style: italic;
     font-size: 25px;
@@ -154,6 +161,31 @@ p {
 
 
 
+
+section {
+    display: flex;
+    width: auto;
+    height: auto;
+    margin: 20px;
+
+}
+
+section img {
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+}
+
+section img:hover {
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+
 .logo4 {
     justify-content: left;
     padding-block: 25px;
@@ -177,6 +209,8 @@ a {
 
 
 .h5 {
+    display: flex;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     grid-area: subtitulo
 }
 
